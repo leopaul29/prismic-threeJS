@@ -40,8 +40,13 @@ class Sketch {
           additionalAngle = angleSize * 0.5
         }
 
-        const x = Math.sin(angle + additionalAngle) * this.radius
-        const z = Math.cos(angle + additionalAngle) * this.radius
+        // tower 1
+        //const x = Math.sin(angle + additionalAngle) * this.radius
+        //const z = Math.cos(angle + additionalAngle) * this.radius
+
+        // tower 2
+        const x = Math.sin(angle + additionalAngle) * this.radius * 1.5
+        const z = Math.cos(angle + additionalAngle) * this.radius * 0.75
 
         this.blocks.push(new Block(this, { x, y, z }))
       }
