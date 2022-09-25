@@ -28,6 +28,7 @@ class Sketch {
 
     // instantiate components
     this.floor = new Floor(this)
+    this.ball = new Ball(this)
 
     // kick off our animation!
     this.animate()
@@ -35,6 +36,8 @@ class Sketch {
   // ANIMATION
   animate() {
     this.floor.update()
+
+    this.ball.update()
 
     // your code here!
 
